@@ -1,0 +1,77 @@
+@charset "utf-8";
+/*全局样式*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,section, article, aside, header, footer, nav, dialog, figure,menu,hgroup,iframe{ margin:0; padding:0; border:0; }
+html{ -webkit-text-size-adjust:none;}
+body{ font-family:"Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif; font-size:12px; line-height:24px; background:#fff;  -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased;  font-smoothing: antialiased;  color:#333; }
+
+input,textarea{ resize:none; font-family:"Microsoft YaHei"; background: #fff; border: 0;  }
+img{ border:none; vertical-align:middle; }
+ul,li{ list-style:none;}
+a{ text-decoration:none; color:#333; outline:none; }
+a:hover{ color:#fff;}
+input:focus,textarea:focus{ outline:none; }
+
+/*测试用border:1px solid red;*/
+/*公用样式*/
+.fl{ float:left;}
+.fr{ float:right;}
+.of{ overflow:hidden;}
+
+/*雪碧*/ 
+a i{ background:url(../images/icon.png) no-repeat; display:inline-block;}
+a.like i{ background-position:-22px 0; width:13px; height:17px; vertical-align:-3px; margin-right:5px;}
+a.comm i{ background-position:-35px 0; width:14px; height:17px; vertical-align:-4px; margin-right:5px;}
+a.wechat i{ background-position:0 0;  width:22px; height:17px; vertical-align:-5px; margin-left:5px;}
+
+/*错误检测复制这里边框样式border:1px solid #c58801;*/
+
+.header{ background:#266dab; width:100%; min-width:1100px; height:500px;}
+.header .content{ width:745px; height:380px; margin:94px auto;}
+.header .left img{ margin-top:110px;}
+
+.header .right h1{ font-size:18px; line-height:18px; font-weight:normal; color:#fff; margin-bottom:10px;}
+.header .right .import{ width:230px; height:20px; line-height:20px; padding:8px 10px; color:#333; border-radius:2px;}
+.header .right .login{ width:250px; height:36px; line-height:36px; border-radius:2px; font-size:14px; color:#1e5587; background:#8dcaff; cursor:pointer;}
+.header .right .login:hover{ background:#63b6ff;}
+.header .right a{ color:#fff;}
+.header .right a:hover{ text-decoration:underline;}
+.header .right label{color:#fff;}
+.header .right label:hover{ text-decoration:underline;}
+.header .right .remember{ margin-right:10px; vertical-align:-2px;}
+.header .right .btn{ width:115px; border:1px solid #fff; text-align:center; display:block; line-height:36px; border-radius:2px;}
+
+
+
+
+.main{ width:100%; min-width:1100px;}
+.main h1{ font-size:22px; font-weight:normal; margin-bottom:20px; text-align:center;}
+
+.main .top{ width:700px; margin:48px auto;}
+.main .top li{ float:left; margin:10px;}
+
+.main .bottom{ width:700px; margin:0 auto;}
+.main .bottom dl{ height:159px;}
+.main .bottom dt img{ margin:10px;}
+.main .bottom dd{ width:605px; float:right; text-align:left; margin:-50px 10px 0 0; padding-bottom:20px; border-bottom:1px solid #ccc;}
+.main .bottom dd p{ margin-top:-10px;}
+.main .bottom dd a{ color:#666; font-size:12px; line-height:26px;}
+.main .bottom dd a.user{ color:#266dab; margin-right:20px;}
+.main .bottom dd a.tags{ background:#eff6fa; padding:5px 12px; border-radius:12px; margin-left:20px;}
+.main .bottom dd a.like{ margin-left:20px;}
+.main .bottom dd a.comm{ margin-left:20px;}
+.main .bottom dd a.tags:hover{ text-decoration:none; background:#b6e3fd;}
+.main .bottom dd a:hover{ text-decoration:underline;}
+.main .bottom dd h1{ font-size:16px; line-height:26px; text-align:left;}
+
+.footer{ width:100%; min-width:1100px; height:175px;}
+.footer .con{ width:285px; margin:22px auto 90px auto; text-align:center;}
+.footer .con a{ color:#333;}
+.footer .con a:hover{ text-decoration:underline;}
+.footer .con p{ clear:both;}
+.footer .con li{ float:left; margin:10px 6px;}
+
+
+
+
+
+

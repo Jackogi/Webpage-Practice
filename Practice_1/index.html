@@ -4,7 +4,27 @@
 	<meta charset="utf-8">
 	<title>首页</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript">
+		window.onload = function(){
+			//输入框获取焦点时清除placeholder;
+			var rmp1 = document.getElementById('rmp1');
+			rmp1.onfocus = function(){
+				document.getElementById('rmp1').setAttribute('placeholder','')
+			}
+			rmp1.onblur = function(){
+				document.getElementById('rmp1').setAttribute('placeholder','用户名')
+			}
+
+			var rmp2 = document.getElementById('rmp2');
+			rmp2.onfocus = function(){
+				document.getElementById('rmp2').setAttribute('placeholder','')
+			}
+			rmp2.onblur = function(){
+				document.getElementById('rmp2').setAttribute('placeholder','密码')
+			}
 		}
+	</script>
+</head>
 	
 <body>
 

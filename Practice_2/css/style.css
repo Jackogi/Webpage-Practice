@@ -1,0 +1,179 @@
+@charset "utf-8";
+/*全局样式*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,section, article, aside, header, footer, nav, dialog, figure,menu,hgroup,iframe { margin:0; padding:0; border:0; }
+html { -webkit-text-size-adjust:none;}
+body { font-family:"Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif; font-size:12px; line-height:24px; background:#fff;  -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased;  font-smoothing: antialiased;  color:#333; }
+
+input,textarea { resize:none; font-family:"Microsoft YaHei"; background: #fff; border: 0;}
+h1,h2 { font-weight:normal; }
+ul,li { list-style:none;}
+img { border:none; vertical-align:middle;}
+a { text-decoration:none; color:#666; outline:none;}
+a:hover { color:#db323b;}
+input:focus,textarea:focus { outline:none;}
+
+/*测试用 border:1px solid red;*/
+/*公用样式*/
+.fl { float:left;}
+.fr { float:right;}
+.of { overflow:hidden;}
+
+/*雪碧*/
+a em,form em { background:url(../images/icon.png) no-repeat; display:inline-block;}
+a.phone em { background-position:0 0; width:9px; height:16px; vertical-align:-3px; margin-right:5px;}
+a.doc_icon em { background:url(../images/icon.png) no-repeat 0 -18px;  width:18px; height:17px; position:absolute; bottom:3px; right:1px; }
+dt:hover a.doc_icon em { bottom:2px; right:0px; }
+a.pdf_icon em { background-position:-18px -18px; width:17px; height:17px; position:absolute; bottom:3px; right:3px;}
+dt:hover a.pdf_icon em { bottom:2px; right:2px; }
+form em { background-position:-15px 0; width:15px; height:16px; position:absolute; top:10px; right:49px;}
+
+/*页面样式*/
+header { width:100%; min-width:1000px;}
+header .con { width:980px; margin:0 auto;}
+header .con a { margin-left:4px; }
+header .con a.phone { margin-right:4px; }
+header .con b { width:1px; height:12px; background:#666; display:inline-block; vertical-align:-2px; }
+
+header .top { margin:8px 0 5px 0;}
+header .mid { width:980px; margin-bottom:20px;}
+header .mid form { float:right; position:relative; margin:10px 0 8px 0;}
+header .mid .key { width:312px; height:14px; line-height:32px; border:1px solid #c7c7c7; border-radius:3px; padding:9px 10px; color:#555;}
+header .mid .key:focus { border:1px solid #db323b;}
+header .mid .search { width:78px; height:34px; background:#db323b; border-radius:3px; color:#fff; cursor:pointer; text-align:right; padding:0 14px 0 0;}
+header .mid .search:hover { background:#cd0c16; }
+
+nav { width:100%; min-width:1000px; clear:both; overflow:hidden; background:#ff7e00;}
+nav .con { width:980px; margin:0 auto;}
+nav .con li { float:left; }
+nav .con li a { font-size:16px; line-height:36px; color:#fff; padding:0 30px; display:block; }
+nav .con li a.on { background:#db323b; }
+nav .con li a:hover { background:#d6242e; }
+
+nav time { float:right; color:#fff; line-height:36px; }
+
+.main { width:100%; min-width:980px; }
+.main .left h1 { width:690px; font-size:16px; line-height:32px; border-bottom:2px solid #db323b; }
+
+.main .con { width:980px; margin:20px auto; }
+.main .left { width:690px; }
+.main .left .dynamic { margin-top:20px; }
+.main .left .dynamic li { margin:14px 0; width:690px; overflow: hidden;}
+.main .left .dynamic li a { float:left; }
+.main .left .dynamic li a.pics { margin:6px 15px 6px 0; }
+.main .left .dynamic li a:hover { text-decoration:underline; }
+.main .left .dynamic li h2 { float:left; width:628px; margin-bottom:10px; }
+.main .left .dynamic li h2 a{ color:#2d64b3; font-size:14px;  }
+.main .left .dynamic li h2 p{ float:left; font-size:14px; margin:0 10px 0 5px; }
+.main .left .dynamic span { float:left; width:690px; height:1px; background:#ccc; margin-bottom:20px; }
+.main .left .dynamic time { color:#666; }
+
+.main .left .best_doc { width:725px; overflow:hidden; }
+.main .left .best_doc h1 a { font-size:12px; float:right; color:#333; }
+.main .left .best_doc h1 a:hover { color:#d6242e; }
+
+.main .left .best_doc li { float:left; margin:30px 35px 30px 10px; }
+.main .left .best_doc dl { width:100px;}
+.main .left .best_doc dl dt { width:75px; height:107px; border:1px solid #ddd; padding:1px; position:relative;  } 
+.main .left .best_doc dl dt:hover { border:2px solid #d6242e; padding:0;}
+.main .left .best_doc dl dt img { max-width:75px; max-height:107px; }
+.main .left .best_doc dl dd { font-size:14px; margin-top:5px; }
+.main .left .best_doc dl dd a { color:#2d64b3; display:block; }
+.main .left .best_doc dl dd a:hover { text-decoration:underline; }
+.main .left .best_doc dl dd p { width:81px; font-size:12px; color:#666; }
+.main .left .best_doc dl dd p span{ float:right; }
+
+.main .left .newest_doc { width:725px; overflow:hidden; }
+.main .left .newest_doc h1 a { font-size:12px; float:right; color:#333; }
+.main .left .newest_doc h1 a:hover { color:#d6242e; }
+
+.main .left .newest_doc li { float:left; margin:30px 35px 30px 10px; }
+.main .left .newest_doc dl { width:100px; }
+.main .left .newest_doc dl dt { width:75px; height:107px; border:1px solid #ddd; padding:1px; position:relative; } 
+.main .left .newest_doc dl dt:hover { border:2px solid #d6242e; padding:0; }
+.main .left .newest_doc dl dt img { max-width:75px; max-height:107px; }
+.main .left .newest_doc dl dd { font-size:14px; margin-top:5px;}
+.main .left .newest_doc dl dd a { color:#2d64b3; display:block; }
+.main .left .newest_doc dl dd a:hover { text-decoration:underline; }
+.main .left .newest_doc dl dd p { width:81px; font-size:12px; color:#666; }
+.main .left .newest_doc dl dd p span{ float:right; }
+
+.main .right { width:250px; }
+.main .right .log { border:1px solid #e4e4e4; border-top:2px solid #d6242e; }
+.main .right .log form { width:210px; margin:5px auto; }
+.main .right .log form h1 { font-size:14px; margin:14px 0;}
+.main .right .log form input { margin:8px 0; }
+.main .right .log form input.btn { border:1px solid #dadada; border-radius:3px; padding:9px 10px; width:188px; font-size:12px; line-height:20px; color:#555; }
+.main .right .log form input.btn:focus { border:1px solid #d6242e; }
+.main .right .log form input.login { background:#d6242e; color:#fff; width:210px; height:34px; border-radius:3px; cursor:pointer; margin-bottom:22px; }
+.main .right .log form input.login:hover { background:#cd0c16; }
+
+.main .right .cut span { border:1px solid #e4e4e4; border-top:0; width:248px; height:2px; display:block;}
+
+.main .right .other { background:#fcfcfc; border:1px solid #e4e4e4; border-top:0; }
+.main .right .other h1{ font-size:14px; margin:10px 0; border-bottom:2px solid #e4e4e4;}
+.main .right .other .con2 { width:210px; padding-top:12px; margin:0 auto; }
+
+.main .right .post li b { width:3px; height:3px; background:#888; display:inline-block; vertical-align:3px; margin:0 5px;}
+.main .right .post li a { color:#2d64b3 }
+.main .right .post li a:hover { text-decoration:underline; }
+
+.main .right .con_task { margin-bottom:10px; }
+.main .right .task dl { float:left; margin:6px 0;}
+.main .right .task dt { float:left; margin:6px 10px 0 0;}
+.main .right .task dd a { color:#2d64b3; }
+.main .right .task dd a:hover { text-decoration:underline; }
+
+.num1 { background:#b43528; }
+.num2 { background:#e33b2a; }
+.num3 { background:#fa5646; }
+.num0 { background:#676767; }
+.main .right li i { font-style:normal; font-weight:bold; color:#fff; width:17px; line-height:17px; display:inline-block; text-align:center; border-radius:3px; }
+
+.main .right .rank li { line-height:36px;  }
+.main .right .rank li a { color:#2d64b3; margin-left:10px; }
+.main .right .rank li a:hover { text-decoration:underline; }
+.main .right .rank span { float:right; color:#888; }
+
+.main .right .hots ol { margin:10px 0; overflow:hidden; }
+.main .right .hots li { line-height:25px; overflow:hidden; margin:15px 0;}
+.main .right .hots li i { float:left; margin-top:6px;}
+.main .right .hots li a { float:left; color:#2d64b3; margin-left:10px; width:120px; display:block;}
+.main .right .hots li a:hover { text-decoration:underline; }
+.main .right .hots span { float:left; color:#888; margin-left:10px; }
+.main .right .hots li img { float:left; margin-left:10px; margin-top:6px;}
+
+footer { clear:both; width:100%; min-width:1000px; }
+footer p { width:980px; border-top:1px solid #ccc; margin:0 auto; text-align:center; padding:15px 0 45px 0; color:#666; }
+
+/*浮层登录 方法一样式*/
+/*.upper_login { }
+#upper-login .bg { background:black; opacity:0.3; position:fixed; width:100%; height:100%; top:0; left:0; }
+#upper-login .log { width:370px; height:260px; z-index:9; background:#fff; position:fixed; top:50%; left:50%; margin-top:-130px; margin-left:-185px; }
+
+#upper-login .log form { width:310px; margin:23px auto; }
+#upper-login .log form h1 { font-size:14px; }
+#upper-login .log form input { margin:10px 0; background:#fcfcfc; }
+#upper-login .log form input.btn { border:1px solid #dadada; border-radius:3px; padding:8px 10px; width:288px; font-size:14px; line-height:36px; color:#555; }
+#upper-login .log form input.btn:focus { border:1px solid #d6242e; background:#fff;}
+#upper-login .log form input.login { background:#d6242e; color:#fff; width:310px; height:38px; border-radius:3px; cursor:pointer; }
+#upper-login .log form input.login:hover { background:#cd0c16; }*/
+
+/*浮层登录 table布局样式*/
+#upper-login .bg { width:100%; height:100%; background:black; opacity:0.3; position:fixed; top:0; left:0; }
+#upper-login .log { width:370px; height:320px; background:#fff; position:fixed; top:50%; left:50%; margin-top:-160px; margin-left:-185px; }
+
+#upper-login .log table { width:310px; margin:23px auto;}
+#upper-login .log table p { color:#666; }
+#upper-login .log table a { color:#d6242e; }
+#upper-login .log table a:hover { text-decoration:underline; }
+#upper-login .log table h1 { margin-top:8px; font-size:14px; }
+#upper-login .log table label { color:#666; }
+#upper-login .log table label .rem { vertical-align:-2px; }
+#upper-login .log table input { background:#fcfcfc; }
+#upper-login .log table input.btn { border:1px solid #dadada; border-radius:3px; padding:8px 10px; width:288px; height:20px; line-height:20px; font-size:14px; color:#555; }
+#upper-login .log table input.btn:focus { border:1px solid #d6242e; background:#fff;}
+#upper-login .log table input.login { background:#d6242e; color:#fff; width:310px; height:38px; border-radius:3px; cursor:pointer; }
+#upper-login .log table input.login:hover { background:#cd0c16; }
+
+#upper-login .log #close { position:absolute; cursor:pointer; background:url("../images/icon.png") no-repeat 0 -37px; display:inline-block; width:12px; height:12px; top:10px; right:10px;}
+#upper-login .log #close:hover { background:url("../images/icon.png") no-repeat -12px -37px; }

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>中国石油 企业知识库</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/html5.js"></script>
+	<script type="text/javascript">
+			window.onload = function(){
+				//获取日期显示
+				var today = new Date();
+				var month = today.getMonth()+1;
+				var year = today.getFullYear();
+				var week = today.getDay();
+				var day = today.getDate();
+				var myweek = ['星期天','星期一','星期二','星期三','星期四','星期五','星期六']
+				document.getElementById("nowt").innerHTML = year + '年' + month + '月' + day + '日 ' + myweek[week];
+				//关闭登陆框
+				var oclose = document.getElementById('close');
+				oclose.onclick = function(){
+					document.getElementById('upper-login').style.display = 'none';
+				}
+			}
+	</script>
+</head>
+
+<body>
+<!-- header -->
+	<header>
+		<div class="con">
+			<div class="top fr"><a href="#" class="phone"><em></em>下载客户端</a><b></b><a href="#">登录</a></div>
+			<div class="mid fl">
+				<div class="logo fl"><a href="#"><img src="images/logo.png"></a></div>
+				<form>
+					<input type="text" placeholder="关键词" class="key">
+					<input type="submit" value="搜索" class="search"><em></em>
+				</form>
+			</div>
+		</div>
+	</header>
+	<nav>
+		<div class="con"><!-- 2013年9月6日 星期五 -->
+			<ul>
+				<li><a href="#" class="on">首页</a></li>
+				<li><a href="#">文库</a></li>
+				<li><a href="#">专辑</a></li>
+			</ul>
+			<time id="nowt">a</time>
+		</div>
+	</nav>
+<!-- main -->
+	<div class="main">
+		<div class="con">
+		<!-- left -->
+			<div class="left fl">
+				<div class="banner"><a href="#"><img src="images/banner.jpg"></a></div>
+
+				<!-- 动态信息 -->
+				<div class="dynamic">
+					<h1>动态信息</h1>
+					<ul>
+						<li>
+							<a href="#" class="pics"><img src="images/user_pic.jpg"></a>
+							<h2>
+								<a href="#" class="name">白芷兰</a>
+								<p class="action">更新了任务</p>
+								<a href="#" class="file">“文档管理与知识分享解决方案”</a>
+							</h2>
+							<time datetime="2013-11-03 13:05">1小时前</time>
+						</li>
+						<span></span>
+						<li>
+							<a href="#" class="pics"><img src="images/user_pic.jpg"></a>
+							<h2>
+								<a href="#" class="name">爱德华</a>
+								<p class="action">提交了文档</p>
+								<a href="#" class="file">“企业知识管理价值分析.pdf”</a>
+							</h2>
+							<time datetime="2013-11-03 12:02">2013-11-03 12:02</time>
+						</li>
+						<span></span>
+						<li>
+							<a href="#" class="pics"><img src="images/user_pic.jpg"></a>
+							<h2>
+								<a href="#" class="name">Nicky</a>
+								<p class="action">更新了任务</p>
+								<a href="#" class="file">“构建5度企业知识分享任务跟踪统计系统”</a>
+							</h2>
+							<time datetime="2013-11-03 12:02">2013-11-03 12:02</time>
+						</li>
+						<span></span>
+						<li>
+							<a href="#" class="pics"><img src="images/user_pic.jpg"></a>
+							<h2>
+								<a href="#" class="name">王三三</a>
+								<p class="action">创建了社区</p>
+								<a href="#" class="file">“个人知识管理创新思维及分享沙龙”</a>
+							</h2>
+							<time datetime="2013-11-03 12:02">2013-11-03 12:02</time>
+						</li>
+						<span></span>
+						<li>
+							<a href="#" class="pics"><img src="images/user_pic.jpg"></a>
+							<h2>
+								<a href="#" class="name">王三三</a>
+								<p class="action">创建了社区</p>
+								<a href="#" class="file">“个人知识管理创新思维及分享沙龙”</a>
+							</h2>
+							<time datetime="2013-11-03 12:02">2013-11-03 12:02</time>
+						</li>
+					</ul>
+				</div>
+
+				<!-- 精华文档 -->
+				<div class="best_doc">
+					<h1>精华文档<a href="#">更多&gt;</a></h1>
+					<ul>
+						<li>
+							<dl>
+								<dt>
+									<a href="#" class="doc_icon"><img src="images/doc.jpg"><em></em></a>
+								</dt>
+								<dd>
+									<a href="#">文档管理与知识 分享解决方案</a>
+									<p>48页<span>78阅读</span></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<a href="#" class="pdf_icon"><img src="images/doc.jpg"><em></em></a>
+								</dt>
+								<dd>
+									<a href="#">文档管理与知识 分享解决方案</a>
+									<p>48页<span>78阅读</span></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<a href="#" class="doc_icon"><img src="images/doc.jpg"><em></em></a>
+								</dt>
+								<dd>
+									<a href="#">文档管理与知识 分享解决方案</a>
+									<p>48页<span>78阅读</span></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<a href="#" class="pdf_icon"><img src="images/doc.jpg"><em></em></a>
+								</dt>
+								<dd>
+									<a href="#" class="pdf_icon">文档管理与知识 分享解决方案</a>
+									<p>48页<span>78阅读</span></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<a href="#" class="doc_icon"><img src="images/doc.jpg"><em></em></a>
+								</dt>
+								<dd>
+									<a href="#">文档管理与知识 分享解决方案</a>
+									<p>48页<span>78阅读</span></p>
+								</dd>
+							</dl>
+						</li>
+					</ul>	
+				</div>
+
+				<!-- 最新文档 -->
+				<div class="newest_doc">
+					<h1>最新文档<a href="#">更多&gt;</a></h1>
+					<ul>
+						<li>
+							<dl>
+								<dt>
+									<a href="#" class="pdf_icon"><img src="images/doc.jpg"><em></em></a>
+								</dt>
+								<dd>
+									<a href="#">文档管理与知识 分享解决方案</a>
+									<p>48页<span>78阅读</span></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<a href="#" class="doc_icon"><img src="images/doc.jpg"><em></em></a>
+								</dt>
+								<dd>
+									<a href="#">文档管理与知识 分享解决方案</a>
+									<p>48页<span>78阅读</span></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<a href="#" class="pdf_icon"><img src="images/doc.jpg"><em></em></a>
+								</dt>
+								<dd>
+									<a href="#">文档管理与知识 分享解决方案</a>
+									<p>48页<span>78阅读</span></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<a href="#" class="pdf_icon"><img src="images/doc.jpg"><em></em></a>
+								</dt>
+								<dd>
+									<a href="#">文档管理与知识 分享解决方案</a>
+									<p>48页<span>78阅读</span></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<a href="#" class="doc_icon"><img src="images/doc.jpg"><em></em></a>
+								</dt>
+								<dd>
+									<a href="#">文档管理与知识 分享解决方案</a>
+									<p>48页<span>78阅读</span></p>
+								</dd>
+							</dl>
+						</li>
+					</ul>	
+				</div>
+			</div>
+		<!-- right -->
+			<div class="right fr">
+				<div class="log">
+					<form>
+						<h1>用户登录</h1>
+						<input type="text" placeholder="用户名" class="btn">
+						<input type="password" placeholder="密码" class="btn">
+						<input type="submit" value="立即登录" class="login">
+					</form>
+				</div>
+
+				<div class="cut">
+					<span></span>
+					<span></span>
+				</div>
+
+				<div class="other">
+					<div class="con2">
+						<div class="post">
+							<h1>系统公告</h1>
+							<ul>
+								<li><b></b><a href="#">最新安全客户端升级通知</a></li>
+								<li><b></b><a href="#">知识库v3全新首发</a></li>
+								<li><b></b><a href="#">关于系统使用培训的通知</a></li>
+							</ul>
+						</div>
+
+						<div class="task">
+							<h1>任务悬赏</h1>
+							<div class="con_task of">
+								<dl>
+									<dt><img src="images/user_pic.jpg"></dt>
+									<dd><a href="#">那位手中有知识库培训材料分享？万分感谢！</a></dd>
+								</dl>
+								<dl>
+									<dt><img src="images/user_pic.jpg"></dt>
+									<dd><a href="#">那位手中有知识库培训材料分享？万分感谢！</a></dd>
+								</dl>
+								<dl>
+									<dt><img src="images/user_pic.jpg"></dt>
+									<dd><a href="#">那位手中有知识库培训材料分享？万分感谢！</a></dd>
+								</dl>
+							</div>
+						</div>
+
+						<div class="rank">
+							<h1>阅读排行</h1>
+							<ol>
+								<li><i class="num1">1</i><a href="#">文档管理与知识分享</a><span>9293</span></li>
+								<li><i class="num2">2</i><a href="#">企业知识管理实践</a><span>8521</span></li>
+								<li><i class="num3">3</i><a href="#">个人知识管理方法</a><span>6299</span></li>
+								<li><i class="num0">4</i><a href="#">知识库使用培训</a><span>1657</span></li>
+								<li><i class="num0">5</i><a href="#">文档经验分类谈</a><span>952</span></li>
+							</ol>
+						</div>
+
+						<div class="hots of">
+							<h1>热点人物</h1>
+							<ol>
+								<li><i class="num1">1</i><img src="images/user_pic.jpg"><a href="#">王桢之</a><span>市场部</span></li>
+								<li><i class="num2">2</i><img src="images/user_pic.jpg"><a href="#">王桢之</a><span>市场部</span></li>
+								<li><i class="num3">3</i><img src="images/user_pic.jpg"><a href="#">王桢之</a><span>市场部</span></li>
+								<li><i class="num0">4</i><img src="images/user_pic.jpg"><a href="#">王桢之</a><span>市场部</span></li>
+								<li><i class="num0">5</i><img src="images/user_pic.jpg"><a href="#">王桢之</a><span>市场部</span></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- footer -->
+	<footer class="of">
+		<p>版权所有：中国石油天然气集团公司</p>
+	</footer>
+
+<!-- 浮层登录 简单写法 -->
+<!--<div class="upper_login">
+		<div class="bg"></div>
+		<div class="log">
+			<form>
+				<h1>用户登录</h1>
+				<input type="text" placeholder="用户名" class="btn">
+				<input type="password" placeholder="密码" class="btn">
+				<input type="submit" value="立即登录" class="login">
+			</form>
+		</div>
+	</div>-->
+
+<!-- 如果有“记住、注册、忘记”等内容在同一行，且需分别靠两端对齐，用table布局框架更清晰 -->
+	<div id="upper-login" style="display:block">
+		<div class="bg"></div>
+		<div class="log">
+			<div id="close"></div>
+			<table>
+				<tr>
+					<td colspan="2" height="24"><h1>用户登录</h1></td>
+				</tr>
+				<tr>
+					<td colspan="2" height="56"><input type="text" placeholder="用户名" class="btn"></td>
+				</tr>
+				<tr>
+					<td colspan="2" height="56"><input type="password" placeholder="密码" class="btn"></td>
+				</tr>
+				<tr>
+					<td height="24"><label><input type="checkbox" class="rem" checked>下次自动登录</label></td>
+					<td height="24" align="right"><a href="#">忘记密码?</a></td>
+				</tr>
+				<tr>
+					<td colspan="2" height="56"><input type="submit" value="立即登录" class="login"></td>
+				</tr>
+				<tr>
+					<td height="24"><p>没有账号?</p></td>
+					<td height="24" align="right"><a href="#">立即注册&gt;</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>

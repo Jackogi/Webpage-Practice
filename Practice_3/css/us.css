@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+.talk { 
+	position:relative;
+	width:240px;
+	height:120px;
+	margin:50px auto;
+	background:#fff;
+}
+.talk img:nth-child(1) {
+	width:0;
+	height:0;
+	position:absolute;
+	left:0; bottom:60px;
+	-webkit-animation:6s 0.5s talk2 ease-in-out infinite;
+	animation:6s 0.5s talk2 ease-in-out infinite;
+}
+.talk img:nth-child(2) {
+	width:0;
+	height:0;
+	position:absolute;
+	right:0; bottom:0;
+	-webkit-animation:6s talk1 ease-in-out infinite;
+	animation:6s talk1 ease-in-out infinite;
+}
+.talk span { 
+	position:absolute;
+	display:inline-block;
+	background:url('../images/talk3.png') no-repeat 0 0; 
+	border-radius:8px;
+	width:168px;
+	height:19px;
+	left:-10px;
+	top:24px;
+	opacity:0;
+	-webkit-animation:6s 0.8s talk3 ease-in-out infinite;
+	animation:6s 0.8s talk3 ease-in-out infinite;
+}
+
+@-webkit-keyframes talk1
+{
+	0%{
+		width:0; height:0;
+	}
+	5%{
+		width:53px; height:45px;
+	}
+	75%{
+		width:53px; height:45px;
+	}
+	80%{
+		width:0; height:0;
+	}
+}
+@keyframes talk1
+{
+	0%{
+		width:0; height:0;
+	}
+	5%{
+		width:53px; height:45px;
+	}
+	75%{
+		width:53px; height:45px;
+	}
+	80%{
+		width:0; height:0;
+	}
+}
+
+@-webkit-keyframes talk2
+{
+	0%{
+		width:0; height:0;
+	}
+	5%{
+		width:170px; height:45px;
+	}
+	75%{
+		width:170px; height:45px;
+	}
+	80%{
+		width:0; height:0;
+	}
+}
+@keyframes talk2
+{
+	0%{
+		width:0; height:0;
+	}
+	5%{
+		width:170px; height:45px;
+	}
+	75%{
+		width:170px; height:45px;
+	}
+	80%{
+		width:0; height:0;
+	}
+}
+
+@-webkit-keyframes talk3
+{
+	0%{
+		
+	}
+	5%{
+		width:168px; height:19px; top:24px; left:-10px; opacity:1;
+	}
+	65%{
+		width:168px; height:19px; background-position:-396px 0; top:24px; left:-10px; opacity:1;
+	}
+	70%{
+		opacity:0;
+	}
+}
+@keyframes talk3
+{
+	0%{
+		
+	}
+	5%{
+		width:168px; height:19px; top:24px; left:-10px; opacity:1;
+	}
+	65%{
+		width:168px; height:19px; background-position:-500px 0; top:24px; left:-10px; opacity:1;
+	}
+	70%{
+		opacity:0;
+	}
+}

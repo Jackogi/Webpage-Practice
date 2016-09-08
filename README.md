@@ -7,9 +7,9 @@
 >* [练习二](https://jackogi.github.io/Webpage-Practice/Practice_2/index.html)
 
 ### Practice_3:
->全套项目练习，基础动态网页元素（包括Sidebar、下拉菜单、"专家预约"弹框等）[（点我预览）](https://jackogi.github.io/Webpage-Practice/Practice_3/index.html)
+>基础动态交互网页练习（包括Sidebar显示隐藏、"专家预约"弹框、返回顶部、二级菜单等）[（点我预览）](https://jackogi.github.io/Webpage-Practice/Practice_3/index.html)
 
->在[（美国医疗）](https://jackogi.github.io/Webpage-Practice/Practice_3/medical-us.html)页面写了个CSS3小动画
+>利用CSS3新特性animation制作的小动画效果[（点我点我）](https://jackogi.github.io/Webpage-Practice/Practice_3/medical-us.html)
 
 ### Practice_4:
->PC响应式页面练习[（点我预览）](https://jackogi.github.io/Webpage-Practice/Practice_4/index.html)
+>响应式页面[（点我预览）](https://jackogi.github.io/Webpage-Practice/Practice_4/index.html)

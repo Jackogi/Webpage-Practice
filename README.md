@@ -12,4 +12,4 @@
 >利用CSS3新特性animation制作的小动画效果[（点我点我）](https://jackogi.github.io/Webpage-Practice/Practice_3/medical-us.html)
 
 ### Practice_4:
->响应式页面[（点我预览）](https://jackogi.github.io/Webpage-Practice/Practice_4/index.html)
+>响应式页面[（点我预览）](https://jackogi.github.io/Webpage-Practice/Practice_4/index.html)（此练习目前在继续完善中 (´・ω・)ﾉ）

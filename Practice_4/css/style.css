@@ -107,6 +107,11 @@ header .on { border-bottom:2px solid #2478be; color:#2478be; }
 .solve dl { float:left; margin:45px 79px; }
 .solve dd { font-size:20px; margin-top:26px; }
 
+@media screen and  (max-width:960px){
+	.solve { width:90%;}
+	.solve dl { margin:45px 60px; }
+}
+
 footer { width:100%; background:#444; }
 footer .con { width:1200px; margin:0 auto; padding:41px 0; color:#dcdcdc; font-size:12px; }
 footer .con p { float:left; }

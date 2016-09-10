@@ -49,6 +49,7 @@ header .on { border-bottom:2px solid #2478be; color:#2478be; }
 	.banner .moveup { padding-top:150px; }
 }
 @media screen and ( max-width:720px ) {
+	.banner { margin-top:80px; }
 	.banner>img { max-height:506px; }
 	.banner .con { height:400px; }
 	.banner .con p { font-size:1.2rem; }
@@ -88,7 +89,7 @@ header .on { border-bottom:2px solid #2478be; color:#2478be; }
 .inquire h1 { width:180px; margin:100px auto 60px; font-size:30px;  }
 .inquire form { overflow:hidden; width:738px; margin:0 auto 160px;}
 .inquire input{ float:left; width:580px; height:26px; padding:12px; border-radius:3px; font-size:16px; }
-.inquire input:last-child { float:right; width:120px; height:50px; background:#3b95ba; color:#fff; cursor:pointer;}
+.inquire input:last-child { float:right; width:120px; height:50px; background:#3b95ba; color:#fff; cursor:pointer; transition:.5s; }
 .inquire input:last-child:hover { background:#268bb5; }
 
 @media screen and (max-width:960px){
@@ -103,13 +104,13 @@ header .on { border-bottom:2px solid #2478be; color:#2478be; }
 
 .solve { width:858px; margin:90px auto; text-align:center; }
 .solve h1 { font-size:30px; color:#444; }
-.solve h2 { margin-top:12px; }
-.solve dl { float:left; margin:45px 79px; }
+.solve h2 { margin:12px 0 45px; }
+.solve dl { width:286px; float:left; }
 .solve dd { font-size:20px; margin-top:26px; }
 
 @media screen and  (max-width:960px){
 	.solve { width:90%;}
-	.solve dl { margin:45px 60px; }
+	.solve dl { width:33.33%; }
 }
 
 footer { width:100%; background:#444; }
@@ -124,6 +125,9 @@ footer .con ul li span { width:1px; height:12px; display:inline-block; vertical-
 @media screen and ( max-width:1280px ) {
 	footer .con { width:95%; }
 } 
+
+.slide { position:fixed; z-index:999; right:10px; bottom:120px; width:50px; height:50px; background:#fff; border:1px solid #ccc; }
+.slide i { width:15px; height:15px; border-top:2px solid #666; border-left:2px solid #666; display:block; transform:rotate(45deg); margin:22px auto; }
 
 @-webkit-keyframes engine
 {

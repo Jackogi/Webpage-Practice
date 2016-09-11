@@ -126,7 +126,7 @@ footer .con ul li span { width:1px; height:12px; display:inline-block; vertical-
 	footer .con { width:95%; }
 } 
 
-.slide { position:fixed; z-index:999; right:10px; bottom:120px; width:50px; height:50px; background:#fff; border:1px solid #ccc; }
+.slide { position:fixed; z-index:999; right:10px; bottom:120px; width:50px; height:50px; background:#fff; border:1px solid #ccc; cursor:pointer; }
 .slide i { width:15px; height:15px; border-top:2px solid #666; border-left:2px solid #666; display:block; transform:rotate(45deg); margin:22px auto; }
 
 @-webkit-keyframes engine
